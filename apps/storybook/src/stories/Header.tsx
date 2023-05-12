@@ -1,6 +1,5 @@
 import React from 'react';
 
-import { Button } from './Button';
 import './header.css';
 
 type User = {
@@ -15,8 +14,10 @@ interface HeaderProps {
 }
 
 export const Header = ({ user, onLogin, onLogout, onCreateAccount }: HeaderProps) => (
-  <header>
-    <div className="storybook-header">
+  <header className='bg-orange-200'>
+    <h1 className="bg-orange-200 font-bold p-12">Vite + React + Tailwind</h1>
+
+    <div className="storybook-header ">
       <div>
         <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
           <g fill="none" fillRule="evenodd">
@@ -42,12 +43,12 @@ export const Header = ({ user, onLogin, onLogout, onCreateAccount }: HeaderProps
             <span className="welcome">
               Welcome, <b>{user.name}</b>!
             </span>
-            <Button size="small" onClick={onLogout} label="Log out" />
+            {/* <Button size="small" onClick={onLogout} label="Log out" /> */}
           </>
         ) : (
           <>
-            <Button size="small" onClick={onLogin} label="Log in" />
-            <Button primary size="small" onClick={onCreateAccount} label="Sign up" />
+            {/* <Button size="small" onClick={onLogin} label="Log in" />
+            <Button primary size="small" onClick={onCreateAccount} label="Sign up" /> */}
           </>
         )}
       </div>
