@@ -23,8 +23,12 @@ npm run dev
 
 
 # TODO
-- check figma api
-  - how to integrate with tailwind config setup
 - Create npm packages for the UI components
   - test these components on other sites
   - use github npm manager?
+- chromatic?
+- test themes in stoerybook
+- check figma api
+  - how to integrate with tailwind config setup
+
+  https://turbo.build/repo/docs/handbook/publishing-packages
